@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'myapp',
     'product',
+     'categories', 
      
 ]
 
@@ -57,7 +58,7 @@ ROOT_URLCONF = 'crud.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'product' / 'templates'],
+        'DIRS': [BASE_DIR / 'product' / 'categories' / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

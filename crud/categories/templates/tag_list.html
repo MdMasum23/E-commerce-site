@@ -1,0 +1,11 @@
+<h1>Tags</h1>
+<a href="{% url 'tag_create' %}">Add New Tag</a>
+<ul>
+    {% for tag in tags %}
+        <li>
+            {{ tag.name }}
+            <a href="{% url 'tag_update' tag.pk %}">Edit</a>
+            <a href="{% url 'tag_delete' tag.pk %}">Delete</a>
+        </li>
+    {% endfor %}
+</ul>
